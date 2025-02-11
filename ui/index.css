@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Aver-opKo;
+    src: url(Aver-opKo.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: AverBold-4YlW;
+    src: url(AverBold-4YlW.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gosznak-SemiBold;
+    src: url(Gosznak-SemiBold.otf) format('truetype');
+}
+
+body {
+    display: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    position: fixed;
+}
+
+.menu {
+    font-family: Gosznak-SemiBold;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(background.png);
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#title {
+    font-family: Gosznak-SemiBold;
+    font-size: 25px;
+    color: #C0BFAA;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    font-family: Aver-opKo;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e5222200;
+    background-image: url(search1.png);
+    background-size: 100% 100%;
+    outline: 0;
+    outline-offset: 0;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+#timecycleInput::placeholder {
+    font-family: Aver-opKo;
+    color: rgba(255, 255, 255, 0.527); /* Цвет текста плейсхолдера */
+}
+
+#timecycleInput:focus::placeholder {
+    font-family: Aver-opKo;
+    color: #dadada; /* Цвет текста плейсхолдера */
+}
+
+#timecycleInput:focus {
+    font-family: Aver-opKo;
+    outline: none;
+    background-image: url(search2.png);
+    background-size: 100% 100%;
+    color: #dadada; /* Цвет вводимого текста при фокусе (желтый) */
+}
+
+
+#ButtonContainer {
+    position: absolute;
+    top: 110px;
+    right: 12px;
+    padding: 0px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+#ButtonContainer .enterButton {
+    width: 32%;
+    position: relative;
+    left: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-image: url(button.png);
+    border-radius: 5px;
+    background-size: 100% 100%;
+    color: white;
+    /* cursor: pointer; */
+    font-family: AverBold-4YlW;
+    transition: transform 0.3sease;
+    opacity: 95%;
+    
+}
+
+#ButtonContainer .enterButton:hover {
+    background-image: url(button.png);
+    animation: pulse 0.5s ease-in-out infinite alternate; /* Анимация при наведении */
+    opacity: 75%;
+}
+
+#ButtonContainer .clearButton {
+    width: 32%;
+    position: relative;
+    left: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-image: url(button.png);
+    border-radius: 5px;
+    background-size: 100% 100%;
+    color: white;
+    /* cursor: pointer; */
+    font-family: AverBold-4YlW;
+    transition: transform 0.3sease;
+    opacity: 95%;
+    
+}
+
+#ButtonContainer .clearButton:hover {
+    background-image: url(button.png);
+    animation: pulse 0.5s ease-in-out infinite alternate; /* Анимация при наведении */
+    opacity: 75%;
+}
+
+
+#ButtonContainer .closeButton {
+    margin: 5px;
+    border: none;
+    border-radius: 0;
+    background-color: #1ce02500;
+    color: white;
+    /* cursor: pointer; */
+    font-family: Gosznak-SemiBold;
+    position: relative;
+    top: -105px;
+    left: 28px;
+    opacity: 65%;
+    
+}
+
+#ButtonContainer .closeButton:hover {
+    background-color: rgba(0, 255, 255, 0);
+    animation: pulse 0.5s ease-in-out infinite alternate; /* Анимация при наведении */
+    opacity: 55%;
+}
