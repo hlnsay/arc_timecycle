@@ -24,7 +24,7 @@ body {
 .menu {
     font-family: Gosznak-SemiBold;
     font-size: 25px;
-    color: white;
+    color: rgba(245, 245, 245, 0.829);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,7 +42,6 @@ body {
     font-size: 25px;
     color: #C0BFAA;
     margin-top: 0px;
-    margin-bottom: 10px;
 }
 
 input[type="text"] {
@@ -62,7 +61,7 @@ input[type="text"] {
 
 #timecycleInput::placeholder {
     font-family: Aver-opKo;
-    color: rgba(255, 255, 255, 0.527); /* Цвет текста плейсхолдера */
+    color: #ffffff86; /* Цвет текста плейсхолдера */
 }
 
 #timecycleInput:focus::placeholder {
@@ -78,6 +77,108 @@ input[type="text"] {
     color: #dadada; /* Цвет вводимого текста при фокусе (желтый) */
 }
 
+.timecycle-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -60px;
+    left: 220px;
+}
+
+#timecycleInput {
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+
+#dropdownButton {
+    background-color: #dddddd00;
+    color: #ffffff00;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    background-image: url(l_arrow.png);
+    background-size: 30% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    opacity: 45%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: 'Aver-opKo';
+    font-size: 16px;
+    top: 100%;
+    left: 0;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    list-style: auto;
+    margin-left: 36%;
+    margin-top: -30%;
+    width: 200px;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+.dropdown-content li {
+    padding: 1.6pxpx;
+    /* cursor: pointer; */
+}
+
+.dropdown-content li:hover {
+    background-color: #69696973;
+}
+
+.show {
+    display: block;
+}
+
+/* Стиль скроллбара */
+::-webkit-scrollbar {
+    width: 8px; /* Ширина вертикального скроллбара */
+    height: 8px; /* Высота горизонтального скроллбара */
+    border: none; /* Убираем бордер */
+}
+
+/* Стиль фона скроллбара */
+::-webkit-scrollbar-track {
+    background: #f1f1f100; /* Цвет фона скроллбара */
+    border-radius: 10px;
+    border: none; /* Убираем бордер */
+}
+
+/* Стиль ползунка скроллбара */
+::-webkit-scrollbar-thumb {
+    background-image: url(scrollbar.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* border-radius: 10px; */
+    border: none; /* Убираем бордер */
+}
+
+/* Стиль ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background: #55555500; /* Цвет ползунка при наведении */
+}
+
+/* Стиль горизонтального скроллбара */
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+/* Стиль вертикального скроллбара */
+::-webkit-scrollbar-vertical {
+    width: 8px;
+}
+
 
 #ButtonContainer {
     position: absolute;
@@ -86,7 +187,7 @@ input[type="text"] {
     padding: 0px;
     width: 100%;
     max-width: 320px;
-    margin: 0 auto;
+    margin-top: -1%;
 }
 
 #ButtonContainer .enterButton {

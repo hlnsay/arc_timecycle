@@ -20,6 +20,7 @@ files {
     'ui/button.png',
     'ui/button2.png',
     'ui/background.png',
+    'ui/l_arrow.png',
 }
 
 client_script 'client.lua'
